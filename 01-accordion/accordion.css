@@ -1,0 +1,96 @@
+/* SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      MAIN COLOR: #087f5b
+      SECONDARY COLOR #010d09 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #010d09;
+  line-height: 1;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 700px;
+  margin: 100px auto;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 24px;
+  align-items: center;
+  padding: 32px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: #087f5b;
+}
+
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.number {
+  color: #a5a9a8;
+}
+
+.accordion-btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: transparent;
+  background-color: #ffffff;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+
+.accordion-btn .icon:hover,
+.accordion-btn .icon:focus {
+  stroke: #0ca678;
+}
+
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hidden-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #4f6b64;
+  margin-left: 20px;
+}
