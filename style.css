@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #010d09;
+  line-height: 1;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+a {
+  display: inline-block;
+}
