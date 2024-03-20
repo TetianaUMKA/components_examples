@@ -15,6 +15,22 @@ body {
   font-family: "Inter", sans-serif;
   color: #010d09;
   line-height: 1;
+  padding: 30px 20px;
+}
+
+a {
+  display: inline-block;
+}
+
+.back-to-main {
+  text-decoration: none;
+  color: #2b8a3e;
+  font-size: 18px;
+}
+
+.back-to-main:hover,
+.back-to-main:focus {
+  text-decoration: underline;
 }
 
 .accordion {
