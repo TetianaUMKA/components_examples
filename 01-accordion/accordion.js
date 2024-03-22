@@ -1,4 +1,4 @@
-'strict';
+'use strict';
 
 const accordionBtns = document.querySelectorAll('.accordion-btn');
 const accordionItems = document.querySelectorAll('.item');
