@@ -1,3 +1,10 @@
+/* SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      MAIN COLOR: #087f5b
+      SECONDARY COLOR #010d09 */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +17,20 @@ body {
   line-height: 1;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
   max-width: 1260px;
   height: 100vh;
   margin: 0 auto;
@@ -25,8 +45,10 @@ body {
 
 .preview-open-btn {
   position: absolute;
-  top: 10%;
   right: 10%;
+  transform: translate(0, 24px);
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   border: transparent;
   cursor: pointer;
@@ -36,20 +58,6 @@ body {
   width: 24px;
   height: 24px;
   stroke: #343a40;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-}
-
-.accordion-img {
-  margin-bottom: 20px;
-  width: 240px;
 }
 
 .link-to-component {
@@ -67,6 +75,11 @@ img {
   text-decoration: underline;
 }
 
+.component-img {
+  margin-bottom: 20px;
+  width: 240px;
+}
+
 .preview-modal {
   position: absolute;
   top: 50%;
@@ -77,10 +90,6 @@ img {
   max-width: 938px;
   z-index: 10;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-}
-
-.preview-modal-img {
-  width: 100%;
 }
 
 .preview-close-btn {
