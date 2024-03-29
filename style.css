@@ -67,6 +67,7 @@ img {
   font-size: 24px;
   letter-spacing: 1px;
   border-radius: 10px;
+  transition: background-color 250ms;
 }
 
 .link-to-component:hover,
