@@ -27,3 +27,30 @@ a {
   text-decoration: underline;
   color: #087f5b;
 }
+
+table {
+  width: 800px;
+  margin: 100px auto;
+  font-size: 18px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #087f5b;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
