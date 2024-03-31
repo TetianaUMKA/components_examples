@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
   color: #010d09;
   line-height: 1;
 }
@@ -27,15 +28,27 @@ img {
   width: 100%;
 }
 
+.header {
+  grid-column: 1 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px;
-  max-width: 1260px;
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-auto-rows: 60px repeat(260px);
+  column-gap: calc((100% - 840px) / 2);
+  row-gap: 20px;
+
+  max-width: 1280px;
   height: 100vh;
   margin: 0 auto;
-  padding: 40px 20px;
-  background-color: #f8f9fa;
+  padding: 0 20px;
 }
 
 .link-container {
