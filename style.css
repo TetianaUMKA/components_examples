@@ -72,6 +72,12 @@ h1 {
   stroke: #343a40;
 }
 
+.preview-open-btn:hover,
+.preview-open-btn:focus {
+  outline: 1px solid #343a40;
+  border-radius: 4px;
+}
+
 .link-to-component {
   padding: 20px;
   background-color: #f08c00;
