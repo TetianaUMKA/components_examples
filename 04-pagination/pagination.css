@@ -8,12 +8,18 @@ body {
   font-family: 'Inter', sans-serif;
   color: #010d09;
   line-height: 1;
-  padding: 30px 60px;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 30px 60px;
 }
 
 .back-to-main {
@@ -35,6 +41,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-top: 300px;
 }
 
 .pagination-link:link,
