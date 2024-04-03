@@ -17,7 +17,7 @@ const closeModal = function () {
 
 for (let i = 0; i < previewOpenBtns.length; i++) {
   previewOpenBtns[i].addEventListener('click', function () {
-    previewImg.src = `/images/component-${i + 1}.jpg`;
+    previewImg.src = `images/component-${i + 1}.jpg`;
     previewModal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
