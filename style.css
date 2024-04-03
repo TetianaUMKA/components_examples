@@ -85,7 +85,9 @@ h1 {
   font-size: 24px;
   letter-spacing: 1px;
   border-radius: 10px;
-  transition: background-color 250ms;
+  text-decoration: transparent;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-to-component:hover,
