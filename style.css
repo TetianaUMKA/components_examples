@@ -80,7 +80,7 @@ h1 {
 
 .link-to-component {
   padding: 20px;
-  background-color: #f08c00;
+  background-color: #f7950c;
   color: #212529;
   font-size: 24px;
   letter-spacing: 1px;
@@ -90,7 +90,7 @@ h1 {
 
 .link-to-component:hover,
 .link-to-component:focus {
-  background-color: #f59f00;
+  background-color: #f08c00;
   text-decoration: underline;
 }
 
