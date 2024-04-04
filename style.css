@@ -30,11 +30,12 @@ img {
 
 .header {
   grid-column: 1 / 4;
-  justify-self: center;
+  /* justify-self: center; */
   align-self: center;
 }
 
 h1 {
+  grid-column: 1 / 4;
   text-transform: uppercase;
 }
 
@@ -43,11 +44,11 @@ h1 {
   grid-template-columns: repeat(3, 360px);
   grid-template-rows: 260px;
   column-gap: calc((100% - 1080px) / 2);
-  row-gap: 20px;
+  row-gap: 64px;
   justify-items: center;
 
   max-width: 1280px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 0 20px;
 }
