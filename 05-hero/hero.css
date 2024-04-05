@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #010d09;
+  line-height: 1;
+  padding: 30px 60px;
+}
+
+a {
+  display: inline-block;
+}
+
+.back-to-main {
+  text-decoration: none;
+  color: #099268;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.back-to-main:hover,
+.back-to-main:focus {
+  text-decoration: underline;
+  color: #087f5b;
+}
