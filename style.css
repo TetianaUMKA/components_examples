@@ -60,7 +60,7 @@ h1 {
 .preview-open-btn {
   position: absolute;
   right: 8%;
-  transform: translate(0, 32px);
+  transform: translate(0, 24px);
   width: 24px;
   height: 24px;
   background-color: transparent;
