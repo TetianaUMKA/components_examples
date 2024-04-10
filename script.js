@@ -40,14 +40,27 @@ const closeModal = function () {
 
 // way #3
 
+// previewOpenBtns.forEach(function (previewOpenBtn, i) {
+//   previewOpenBtn.addEventListener('click', function () {
+//     previewImg.srcset = `images/component-${i + 1}.jpg 1x, images/component-${
+//       i + 1
+//     }-2x.jpg 2x`;
+//     previewImg.src = `images/component-${i + 1}.jpg`;
+//     previewModal.classList.remove('hidden');
+//     overlay.classList.remove('hidden');
+//   });
+// });
+
 previewOpenBtns.forEach(function (previewOpenBtn, i) {
-  previewOpenBtn.addEventListener('click', function () {
-    previewImg.srcset = `images/component-${i + 1}.jpg 1x, images/component-${
-      i + 1
-    }-2x.jpg 2x`;
-    previewImg.src = `images/component-${i + 1}.jpg`;
-    previewModal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
+  previewOpenBtn.addEventListener('mouseover', function () {
+    setTimeout(function () {
+      previewImg.srcset = `images/component-${i + 1}.jpg 1x, images/component-${
+        i + 1
+      }-2x.jpg 2x`;
+      previewImg.src = `images/component-${i + 1}.jpg`;
+      previewModal.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    }, 600);
   });
 });
 
