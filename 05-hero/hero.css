@@ -43,7 +43,7 @@ a {
 
 header {
   padding: 32px 32px;
-  height: 60vh;
+  height: 70vh;
 }
 
 nav {
@@ -83,8 +83,9 @@ p {
 
 h2 {
   font-size: 44px;
+  margin-bottom: 32px;
 }
 
 section {
-  padding: 96px 0;
+  padding: 72px 0;
 }
