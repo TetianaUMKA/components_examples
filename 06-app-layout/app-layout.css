@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  font-size: 24px;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #343a40;
+  color: #ffffff;
+  grid-row: 1 / -1;
+}
+
+menu {
+  background-color: #7950f2;
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #5f3dc4;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 24px;
+}
+
+button:last-child {
+  margin-left: auto;
+  background-color: #d6336c;
+}
+
+section {
+  background-color: #ced4da;
+  overflow: scroll;
+
+  /* Important If we used 'overflow: scroll' for flex elements, it wouldn't work. Therefore we must add to elements flex-shrink: 0; */
+}
+
+.inbox-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.inbox-list-item {
+  text-align: center;
+  width: 300px;
+  padding: 20px 30px;
+  background-color: #adb5bd;
+}
+
+main {
+  background-color: #e9ecef;
+}
+
+aside {
+  background-color: #ced4da;
+}
