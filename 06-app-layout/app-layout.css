@@ -4,11 +4,37 @@
   box-sizing: border-box;
 }
 
+a {
+  display: inline-block;
+}
+
 body {
   font-family: sans-serif;
   color: #343a40;
   font-size: 24px;
+}
 
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.back-to-main {
+  text-decoration: none;
+  color: #099268;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin-bottom: 100px;
+}
+
+.back-to-main:hover,
+.back-to-main:focus {
+  text-decoration: underline;
+  color: #087f5b;
+}
+
+.app-layout-container {
   display: grid;
   grid-template-columns: 80px 400px 1fr 250px;
   grid-template-rows: 80px 1fr;
