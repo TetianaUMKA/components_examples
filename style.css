@@ -29,26 +29,23 @@ img {
 }
 
 .header {
-  grid-column: 1 / 4;
-  /* justify-self: center; */
-  align-self: center;
+  grid-column: 1 / -1;
+  align-self: self-end;
 }
 
 h1 {
-  grid-column: 1 / 4;
   text-transform: uppercase;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
-  grid-template-rows: 260px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 104px 1fr;
   column-gap: calc((100% - 1080px) / 2);
   row-gap: 64px;
   justify-items: center;
 
   max-width: 1280px;
-  /* height: 100vh; */
   margin: 0 auto;
   padding: 0 20px;
 }
