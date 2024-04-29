@@ -52,7 +52,7 @@ const closeModal = function () {
 // });
 
 previewOpenBtns.forEach(function (previewOpenBtn, i) {
-  previewOpenBtn.addEventListener('mouseover', function () {
+  previewOpenBtn.addEventListener('mousedown', function () {
     setTimeout(function () {
       previewImg.srcset = `images/component-${i + 1}.jpg 1x, images/component-${
         i + 1
