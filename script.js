@@ -51,22 +51,35 @@ const closeModal = function () {
 //   });
 // });
 
-const openModal = function (index) {
-  setTimeout(function () {
-    previewImg.srcset = `images/component-${
-      index + 1
-    }.jpg 1x, images/component-${index + 1}-2x.jpg 2x`;
-    previewImg.src = `images/component-${index + 1}.jpg`;
-    previewModal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-  }, 600);
-};
-
 previewOpenBtns.forEach(function (previewOpenBtn, i) {
   previewOpenBtn.addEventListener('mousedown', function () {
-    openModal(i);
+    setTimeout(function () {
+      previewImg.srcset = `images/component-${i + 1}.jpg 1x, images/component-${
+        i + 1
+      }-2x.jpg 2x`;
+      previewImg.src = `images/component-${i + 1}.jpg`;
+      previewModal.classList.remove('hidden');
+      overlay.classList.remove('hidden');
+    }, 600);
   });
 });
+
+// const openModal = function (index) {
+//   setTimeout(function () {
+//     previewImg.srcset = `images/component-${
+//       index + 1
+//     }.jpg 1x, images/component-${index + 1}-2x.jpg 2x`;
+//     previewImg.src = `images/component-${index + 1}.jpg`;
+//     previewModal.classList.remove('hidden');
+//     overlay.classList.remove('hidden');
+//   }, 600);
+// };
+
+// previewOpenBtns.forEach(function (previewOpenBtn, i) {
+//   previewOpenBtn.addEventListener('mousedown', function () {
+//     openModal(i);
+//   });
+// });
 
 previewCloseBtn.addEventListener('click', closeModal);
 
