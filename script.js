@@ -51,6 +51,8 @@ const closeModal = function () {
 //   });
 // });
 
+// way #5
+
 previewOpenBtns.forEach(function (previewOpenBtn, i) {
   previewOpenBtn.addEventListener('mousedown', function () {
     setTimeout(function () {
@@ -63,6 +65,8 @@ previewOpenBtns.forEach(function (previewOpenBtn, i) {
     }, 600);
   });
 });
+
+// way #5
 
 // const openModal = function (index) {
 //   setTimeout(function () {
